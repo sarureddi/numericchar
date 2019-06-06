@@ -1,6 +1,10 @@
-s1=input()
-count=0
-for i in s1:
-  if(i.isnumeric()==True):
-    count=count+1
-print(count)  
+s=input("enter the string")
+d=l=0
+for c in s:
+    if c.isdigit():
+        d=d+1
+    elif c.isalpha():
+        l=l+1
+    else:
+        pass
+print("Letters", l)
